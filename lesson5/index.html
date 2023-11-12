@@ -94,12 +94,43 @@
         </div>
     </section>
     <section class="video-section">
-        <div>
-
+        <div class="container">
+            <video width="400" height="300" controls="controls" poster="video/duel.jpg" autoplay loop>
+                <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
+                <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <!-- <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+                <!-- Тег video не поддерживается вашим браузером. -->
+                <!-- <a href="video/duel.mp4">Скачайте видео</a>. -->
+            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fp5-XQFr_nk?si=n7_YaNwaAuGNU6Wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
     <section class="form-section">
         <div class="container">
+            <form action="https://webhook.site/32a9ca45-3797-4100-b5dd-0c3100be5529" method="POST" class="form">
+                <label for="name">Имя</label>
+                <input type="text" name="name" placeholder="Введите ваше имя" id="name"> <!--В поле для ввода будет подсказка из placeholder которая исчезнет при начала воода текста-->
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" placeholder="Введите номер телефона" id="phone">
+
+                <label for="desc">Опишите свою задачу</label>
+                <textarea name="description" id="desc" cols="40" rows="10"></textarea>
+
+                
+                <input type="checkbox" name="answer1" id="answer1" value="answer1">
+                <label for="answer1">Выбрать первый вариант</label>
+                
+                <input type="checkbox" name="answer2" id="answer2" value="answer2">
+                <label for="answer2">Выбрать второй вариант</label>
+
+                <input type="radio" name="radio" id="radio1" value="radio1">
+                <label for="radio1">Выбрать радио1</label>
+                <input type="radio" name="radio" id="radio2" value="radio2">
+                <label for="radio2">Выбрать радио2</label>
+
+                <input type="submit" value="Отправить">                
+
+            </form>
 
         </div>
     </section>
