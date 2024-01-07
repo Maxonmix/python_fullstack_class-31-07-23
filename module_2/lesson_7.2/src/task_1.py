@@ -8,5 +8,9 @@
 
 """
 
-str = input("Введите слово: ")
-print(str[::-1])
+str = input("Введите строку: ")
+list = str.split( )
+str_new = []
+
+for x in list: str_new.append(x[::-1])
+print(" ".join(str_new))
